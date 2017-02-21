@@ -1,0 +1,170 @@
+ 
+<!DOCTYPE html PUBLIC>
+ 
+ <html>
+ <script language="javascript">
+ 	var user = "";
+	 
+ user    = localStorage.getItem("username");
+ 
+ if(user == "" || user == null)
+ {
+	 
+window.location.href = "index.html";	
+//window.location.replace("http://stackoverflow.com"); 
+	 
+}
+else
+{
+	
+	alert("Welcome "+user);
+	//window.location.href = "index.html";	
+
+	} 
+ 
+ 
+</script>
+<head>
+   <meta name="viewport" content="width=device-width">
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+    <title>REXAUDITZ</title>
+     <script type="text/javascript" src="js/jquery.min2.js"></script>
+<script src="js/api.js" type="text/javascript"></script>
+ 
+   <!-- <link rel="Stylesheet"  href="ExercisePage3StyleSheet.css"/>-->
+ 
+     <script type="text/javascript" src="jquery.min.js"></script>
+ 
+<body onLoad="dropTable(), load2()" >
+ 
+ <div id = "welcome" align="center" style="width:100%; color:#F7F3F3; font-size:24px;"> </div>
+ 
+              <form   id="contact" method="post">
+               <div class="container">
+ 
+                  
+ 
+                            <div class="head">
+      <h2>Outlet Information</h2>
+    </div>
+ 
+  <input  type="text" id="outletname" name="outletname" placeholder="Business or Well known name"  required  onFocus="getLocation()">
+    <input type="text" class="form-control input-lg" id="address" name="address" placeholder="Street Name" required>
+  <input type="text" class="form-control input-lg" id="address_2" name="address_2" placeholder="Physical Address" required>
+    <input type="text" class="form-control input-lg" id="landmark" name="landmark" placeholder="Landmark" required>
+    <input type="text" class="form-control input-lg" id="txtsticker" name="txtsticker" placeholder="Sticker Number" required>
+    
+     <div class="left cf"><strong>Is Nivea available in the outlet?</strong></div>
+
+ 
+    <select id="txtnivea" name="txtnivea" required>
+	<option value="" default selected>Is Nivea available in the outlet?</option> 				
+                                    <option value="Yes">Yes</option> 
+                                     <option value="No">No</option>                            
+                                                                
+                                                                
+															</select>
+                                                             <div class="left cf"><strong>Is competitor product available?</strong></div>
+                                                            <select name="txtcompetitor"  id="txtcompetitor" required>
+												 <option value="" default selected> Is competitor product available?</option> 				
+                                    <option value="Yes">Yes</option> 
+                                     <option value="No">No</option>                            
+                                                                
+                                                                
+															</select>
+                     <div class="left cf"><strong>LGA</strong></div>                                                  
+  <select   id="txtlga" name="txtlga"  placeholder = "LGA"  required>
+												 <option value="" default selected>LGA</option> 				
+                                    <option value="Alimosho" >Alimosho</option> 
+                                     <option value="Ajeromi-Ifelodun">Ajeromi-Ifelodun</option>                            
+                                       <option value="Kosofe">Kosofe</option> 
+                                     <option value="Mushin">Mushin</option>                            
+                                         <option value="Oshodi-Isolo">Oshodi-Isolo</option> 
+                                     <option value="Ojo">Ojo</option>                            
+                                       <option value="Ikorodu">Ikorodu</option> 
+                                     <option value="Surulere">Surulere</option>                            
+                                      <option value="Agege">Agege</option> 
+                                     <option value="Ifako-Ijaye">Ifako-Ijaye</option>                            
+                                       <option value="Shomolu">Shomolu</option> 
+                                     <option value="Amuwo-Odofin">Amuwo-Odofin</option>                            
+                                      <option value="Lagos Mainland">	Lagos Mainland</option> 
+                                     <option value="Ikeja">Ikeja</option>                            
+                                       <option value="Eti-Osa">Eti-Osa</option> 
+                                     <option value="Badagry">Badagry</option>   
+                                     
+                                     
+                                     
+                                      <option value="Apapa">Apapa</option> 
+                                     <option value="Lagos Island">Lagos Island</option>                            
+                                      <option value="Epe">Epe</option>   
+                                       <option value="Ibeju-Lekki">Ibeju-Lekki</option>                          
+                                                                                                                              
+                                                                
+															</select>
+  
+  <input type="text"   name="txtcontact" id="txtcontact" placeholder="Owner / Decision Maker" required>
+  <input type="text"  name="txtphone" id="txtphone"  placeholder="Phone Number: (081) 900-00000" required>
+  
+  <div class="left cf"><strong>Outlet Type</strong></div>    
+  <select     id="txtoutlettype" name="txtoutlettype" required>
+											<option value="" default selected>Outlet Type </option>					
+                                 <option>OMLS</option>
+                                 <option>Supermarket</option>
+                                 <option> Cosmetic Stores</option>
+                                 <option>OM Cosmetic stores</option>
+                                 <option>Pharmacies</option>                                                             
+                                                                
+                                                                
+															</select>
+                                                            
+                                                            
+                                                            
+ <input  type="text"   id="txtaospw"  name="txtaospw"  placeholder="Outlet Total Monthly Purchase"  required>
+ <input  type="text"  class="form-control input-lg" id="txtpurchase"  name="txtpurchase"  placeholder="Outlet Monthly Purchase of Nivea Products"  required>
+  <input name="txtcallfrequency"   type="text" required id="txtcallfrequency"  placeholder="How often do you order per month" onFocus="getLocation()">  
+  
+  
+  <input name="lat"   type="text" id="lat"  placeholder="latitude" readonly> 
+  
+  
+  <input name="long"   type="text" id="long"  placeholder="longitude" readonly>
+  
+         <br>
+<br>
+<br>
+<br>                  
+ 
+                      
+                     </div>
+                     
+                     
+                      <div align="center" style="width:100%">
+      <button id="submitButton" type="submit">SAVE</button>
+       <button id="signout" type="button" onClick="signout()">Sign out</button>
+ 
+                <!--<button id="btnUpdate" type=submit>UPDATE</button>-->
+ 
+              <!--  <button id="btnDrop" type=submit>DROP</button>     -->
+                
+                </div>
+               
+ 
+              </form> 
+        <div align="center" style="width:100%">
+   <button id="btnSync" type="button">Sync Now</button>
+        <div style="color:#FFFFFF; size:12px;" id="results"></div>
+ </div>   
+</body>
+ 
+ <script type="text/javascript" src="script.js"> </script>
+   <script src='js/jquery.min.js'></script>
+<script src='js/jquery.validate.min.js'></script> 
+
+    <script src="js/index.js"></script>
+</html>
+ 
+<span style="font-family: Calibri; font-size: small;"> 

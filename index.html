@@ -1,0 +1,79 @@
+
+<!DOCTYPE html PUBLIC>
+ 
+ <html>
+ 
+<head>
+   <meta name="viewport" content="width=device-width">
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">-->
+<script language="javascript">
+
+ var arr = document.URL.match(/logout=([a-z]+)/)
+var room = arr[1];
+
+if(room == "true")
+{
+	
+		  alert("You have logged out successfully. Thank you.");
+}
+
+
+</script>
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+    <title>REXAUDITZ</title>
+ 
+   <!-- <link rel="Stylesheet"  href="ExercisePage3StyleSheet.css"/>-->
+ 
+     <script type="text/javascript" src="jquery.min.js"></script>
+ 
+<body>
+ 
+ <div align="center" style="width:100%; color:#F7F5F5; font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;"><h1>Login Information</h1></div>
+ 
+              <form   id="contact" method="post">
+               <div class="container">
+ 
+                  
+ 
+                            <div class="head">
+      <h2><img src="images/primedatalogo2.jpg" width="247" height="70" alt=""/></h2>
+    </div>
+ 
+  <input  type="text" id="username" name="username" placeholder="Username"  required>
+    <input type="password"  id="password" name="password" placeholder="Password" required>
+ <br>
+
+                  
+ <h4><a href="username.html">First use? Click Here</a></h4><br>
+ 
+
+                      
+                </div>
+                     
+                     
+                      <div align="center" style="width:100%">
+      <button id="loginButton" type="submit">Login Now</button>
+ 
+           
+                 
+                </div>
+               
+ 
+              </form> 
+               <div align="center" style="width:100%">
+    
+        <div style="color:#FFFFFF; size:12px;" id="results2"></div>
+ </div>
+</body>
+ 
+ <script type="text/javascript" src="script.js"> </script>
+   <script src='js/jquery.min.js'></script>
+<script src='js/jquery.validate.min.js'></script> 
+
+    <script src="js/index.js"></script>
+</html>
+ 
+<span style="font-family: Calibri; font-size: small;"> 

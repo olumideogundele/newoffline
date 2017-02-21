@@ -1,0 +1,91 @@
+<!---------------------------------------------------------------------------------------------
+Example client script for JQUERY:AJAX -> PHP:MYSQL example
+by Trystan Lea : openenergymonitor.org : GNU GPL
+
+I recommend going to http://jquery.com/ for the great documentation there about all of this
+---------------------------------------------------------------------------------------------->
+<html>
+  <head>
+   <link rel="stylesheet" href="../css/style.css">
+    <script language="javascript" type="text/javascript" src="jquery.js"></script>
+  </head>
+  <body>
+
+  <!---------------------------------------------------------------------------------------------
+  1) Create some html content that can be accessed by jquery
+  ---------------------------------------------------------------------------------------------->
+  <div id="contact">
+  
+  <form   id="contact" method="post">
+               <div class="container">
+ 
+                  
+ 
+                            <div class="head">
+      <h2> <h3>Output: </h3>
+  <div id="output"><h4>This Message will be replaced by your username and password. If not, Please try again.</h4></div>
+   </h2><br>
+   
+   
+     <div><a href="../username.html">Go back</a></div><br>
+
+      <div><a href="../index.html">Login Now</a></div>
+<br>
+<br>
+
+    </div>
+ 
+                  
+ 
+                      
+                     </div>
+                     
+                   
+               
+               
+ 
+              </form>
+  
+  
+  <script id="source" language="javascript" type="text/javascript">
+
+
+	 var arr = document.URL.match(/room=([a-z]+)/)
+var room = arr[1];
+	  alert(room);
+   
+  
+ 
+ $reverse = 'http://offline.rexauditz.com/ajax/api.php?value='+room;
+
+///  $reverse = 'api.php?value='+room;
+ // alert($reverse);
+	
+ 
+    $.ajax({                                      
+      url: $reverse,                  //the script to call to get data          
+      data: "",                        //you can insert url argumnets here to pass to api.php for example "id=5&parent=6"
+      dataType: 'json',                //data format      
+      success: function(data)          //on recieve of reply
+      {
+        var id = data[3];              //get id
+        var vname = data[23];           //get name
+		
+		
+		
+		 insertRecord2(data[3],  data[23]);
+        //--------------------------------------------------------------------------------------
+        // 3) Update html content
+        //--------------------------------------------------------------------------------------
+        $('#output').html("<b>Username : </b>"+id+"<br /><b> Password: </b>"+vname);     //Set output element html
+        //recommend reading up on jquery selectors they are awesome http://api.jquery.com/category/selectors/
+      } 
+    });
+ 
+  
+ 
+  </script>
+   </div>
+  </body>
+   <script type="text/javascript" src="../script.js"> </script>
+</html>  

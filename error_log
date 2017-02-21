@@ -1,0 +1,18 @@
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Notice:  Undefined variable: long in /home/stmoju/public_html/offline/latprocess.php on line 32
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Notice:  Undefined variable: long in /home/stmoju/public_html/offline/latprocess.php on line 32
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Stack trace:
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP   1. {main}() /home/stmoju/public_html/offline/latprocess.php:0
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Stack trace:
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Notice:  Undefined variable: lat in /home/stmoju/public_html/offline/latprocess.php on line 32
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Stack trace:
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP   1. {main}() /home/stmoju/public_html/offline/latprocess.php:0
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP   1. {main}() /home/stmoju/public_html/offline/latprocess.php:0
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Notice:  Undefined variable: user in /home/stmoju/public_html/offline/latprocess.php on line 32
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Notice:  Undefined variable: lat in /home/stmoju/public_html/offline/latprocess.php on line 32
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Stack trace:
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Stack trace:
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP   1. {main}() /home/stmoju/public_html/offline/latprocess.php:0
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP   1. {main}() /home/stmoju/public_html/offline/latprocess.php:0
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Notice:  Undefined variable: user in /home/stmoju/public_html/offline/latprocess.php on line 32
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP Stack trace:
+[14-Feb-2017 09:53:32 Africa/Lagos] PHP   1. {main}() /home/stmoju/public_html/offline/latprocess.php:0
